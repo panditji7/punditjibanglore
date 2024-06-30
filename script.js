@@ -9,11 +9,10 @@ function sendWhatsAppMessage(event) {
     event.preventDefault();
 
     const name = document.getElementById('name').value;
-    const mobile = document.getElementById('mobile').value;
     const message = document.getElementById('message').value;
 
     const whatsappNumber = '+918088676341';  // Replace with the actual WhatsApp number
-    const whatsappMessage = `Name: ${name}%0AMobile: ${mobile}%0AMessage: ${message}`;
+    const whatsappMessage = `Name: ${name}%0AMessage: ${message}`;
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
     window.open(whatsappURL, '_blank');
